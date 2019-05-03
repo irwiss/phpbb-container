@@ -1,7 +1,7 @@
 FROM alpine:3.9
 
-ENV PHPBB_VERSION="3.2.5" \
-    PHPBB_SHA256="4c50f8657a6f19e73468bac563c1804e112c54c1f700d24803cacc22d080d08b" \
+ENV PHPBB_VERSION="3.2.6" \
+    PHPBB_SHA256="9505c48d5c1e12b8dca9a16447601c2f8c5da600fddde3d356db41462223f839" \
     SERVER_NAME="localhost" \
     SERVER_ADMIN="webmaster@example.com" \
     PHPBB_INSTALL="false" \
