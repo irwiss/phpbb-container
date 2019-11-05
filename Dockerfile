@@ -1,6 +1,7 @@
 FROM alpine:3.9
 
-ENV PHPBB_VERSION="3.2.8" \
+ENV PHPBB_MAJORMINOR="3.2" \
+	PHPBB_VERSION="3.2.8" \
     PHPBB_SHA256="d0ac7bf96beaabddcf6fc799f14893adbd30243ca6e176a1f7466048e6837a21" \
     SERVER_NAME="localhost" \
     SERVER_ADMIN="webmaster@example.com" \
@@ -23,7 +24,7 @@ ENV PHPBB_VERSION="3.2.8" \
 RUN apk add --no-cache curl apache2 imagemagick php7 php7-apache2 php7-ctype php7-curl php7-dom php7-ftp php7-gd php7-iconv php7-json \
         php7-opcache php7-openssl php7-pgsql php7-tokenizer php7-xml php7-zlib php7-zip su-exec \
     && cd /tmp \
-    && curl -sSL https://www.phpbb.com/files/release/phpBB-${PHPBB_VERSION}.tar.bz2 -o phpbb.tar.bz2 \
+    && curl -sSL https://download.phpbb.com/pub/release/${PHPBB_MAJORMINOR}/${PHPBB_VERSION}/phpBB-${PHPBB_VERSION}.tar.bz2 -o phpbb.tar.bz2 \
     && echo "${PHPBB_SHA256}  phpbb.tar.bz2" | sha256sum -c - \
     && tar -xjf phpbb.tar.bz2 \
     && mkdir -p /phpbb /run/apache2 /phpbb/opcache \
