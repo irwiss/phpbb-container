@@ -1,8 +1,8 @@
 FROM alpine:3.9
 
 ENV PHPBB_MAJORMINOR="3.2" \
-	PHPBB_VERSION="3.2.8" \
-    PHPBB_SHA256="d0ac7bf96beaabddcf6fc799f14893adbd30243ca6e176a1f7466048e6837a21" \
+	PHPBB_VERSION="3.2.9" \
+    PHPBB_SHA256="4faf0f469d5ad5fe56c4ac44aa8cf9166c9381f225267a428f45462d1417a0ca" \
     SERVER_NAME="localhost" \
     SERVER_ADMIN="webmaster@example.com" \
     PHPBB_INSTALL="false" \
