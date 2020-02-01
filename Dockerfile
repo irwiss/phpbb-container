@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM alpine:3.11
 
 ENV PHPBB_MAJORMINOR="3.3" \
 	PHPBB_VERSION="3.3.0" \
